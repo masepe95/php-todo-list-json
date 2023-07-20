@@ -47,7 +47,7 @@ const app = createApp({
         (result, task) => (task.id > result ? task.id : result),
         0
       );
-      return ++actualId;
+      return actualId++;
     },
   },
   created() {
