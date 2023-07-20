@@ -6,7 +6,10 @@ const app = createApp({
   data() {
     return {
       tasks: [],
-      newTask: "",
+      newTask: {
+        text: "",
+        done: false,
+      },
     };
   },
   methods: {
