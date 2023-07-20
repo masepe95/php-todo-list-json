@@ -13,9 +13,13 @@ const app = createApp({
     };
   },
   methods: {
-    addNewTask(newTask) {
+    addNewTask() {
       const data = {
-        tasks: newTask,
+        tasks: {
+          text: this.newTask.text,
+          done: false,
+          id: this.newId,
+        },
       };
       const config = {
         headers: { "Content-Type": "multipart/form-data" },
@@ -28,7 +32,7 @@ const app = createApp({
           config
         )
         .then((res) => {
-          this.tasks.push(newTask);
+          this.tasks.push(data.tasks);
         });
       this.newTask = {
         text: "",
