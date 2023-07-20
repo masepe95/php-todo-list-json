@@ -1,1 +1,22 @@
-["Imparare Front End", "Imparare Back End", "Mandare Curriculum", "Fare Colloqui", "Trovare Lavoro" ]
+[
+    {
+        "text": "Imparare Front End",
+        "done": true
+    },
+    {
+        "text": "Imparare Back End",
+        "done": true
+    },
+    {
+        "text": "Mandare Curriculum",
+        "done": true
+    },
+    {
+        "text": "Fare Colloqui",
+        "done": true
+    },
+    {
+        "text": "Trovare Lavoro",
+        "done": true
+    }
+]

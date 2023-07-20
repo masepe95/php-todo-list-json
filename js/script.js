@@ -6,7 +6,24 @@ const app = createApp({
   data() {
     return {
       tasks: [],
+      newTask: "",
     };
+  },
+  methods: {
+    addNewTask(newTask) {
+      const data = {
+        tasks: newTask,
+      };
+      const config = {
+        headers: { "Content-Type": "multipart/form-data" },
+      };
+
+      axios
+        .post("http://localhost/php-todo-list-json/api/tasks/", data, config)
+        .then((res) => {
+          this.tasks.push(newTask);
+        });
+    },
   },
   created() {
     axios
