@@ -22,7 +22,11 @@ const app = createApp({
       };
 
       axios
-        .post("http://localhost/php-todo-list-json/api/tasks/", data, config)
+        .post(
+          "http://localhost:8888/php-todo-list-json/api/tasks/",
+          data,
+          config
+        )
         .then((res) => {
           this.tasks.push(newTask);
         });
@@ -30,7 +34,7 @@ const app = createApp({
   },
   created() {
     axios
-      .get("http://localhost/php-todo-list-json/api/tasks/")
+      .get("http://localhost:8888/php-todo-list-json/api/tasks/")
       .then((res) => {
         this.tasks = res.data;
       })
