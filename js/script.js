@@ -30,6 +30,20 @@ const app = createApp({
         .then((res) => {
           this.tasks.push(newTask);
         });
+      this.newTask = {
+        text: "",
+        done: false,
+        id: null,
+      };
+    },
+  },
+  computed: {
+    newId() {
+      let actualId = this.tasks.reduce(
+        (result, task) => (task.id > result ? task.id : result),
+        0
+      );
+      return ++actualId;
     },
   },
   created() {

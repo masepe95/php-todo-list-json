@@ -1,1 +1,1 @@
-[{"text":"Imparare Front End","done":true},{"text":"Imparare Back End","done":true},{"text":"Mandare Curriculum","done":true},{"text":"Fare Colloqui","done":"false"},{"text":"Trovare Lavoro","done":"false"}]
+[{"text":"Imparare Front End","done":false, "id":0},{"text":"Imparare Back End","done":false, "id":1},{"text":"Mandare Curriculum","done":true, "id":2},{"text":"Fare Colloqui","done":false, "id":3},{"text":"Trovare Lavoro","done":false, "id":4}]
